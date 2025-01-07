@@ -1,0 +1,47 @@
+.todo {
+	width: 600px;
+	padding: 1.2rem;
+	margin-bottom: 3rem;
+	border-radius: 1rem;
+	background-color: #ffffff;
+	box-shadow: 0 2px 20px rgba(204, 208, 214, 0.5);
+}
+
+.title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #1565c0;
+	margin: 1rem 0 0.75rem;
+}
+
+.quote {
+	text-align: center;
+	font-size: 0.875rem;
+	font-style: italic;
+	color: #111111;
+	margin-bottom: 2rem;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 0.7rem;
+}
+
+.list {
+	width: 100%;
+	margin-top: 1.563rem;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	color: #ffffff;
+	border-radius: 0.5rem;
+	background-color: #1565c0;
+	box-shadow: 0 2px 20px rgba(204, 208, 214, 0.5);
+	margin-bottom: 1.25rem;
+}
