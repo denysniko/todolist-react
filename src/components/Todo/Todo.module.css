@@ -22,26 +22,3 @@
 	color: #111111;
 	margin-bottom: 2rem;
 }
-
-.wrapper {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	gap: 0.7rem;
-}
-
-.list {
-	width: 100%;
-	margin-top: 1.563rem;
-}
-
-.item {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem;
-	color: #ffffff;
-	border-radius: 0.5rem;
-	background-color: #1565c0;
-	box-shadow: 0 2px 20px rgba(204, 208, 214, 0.5);
-	margin-bottom: 1.25rem;
-}

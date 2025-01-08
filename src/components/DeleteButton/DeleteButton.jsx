@@ -3,8 +3,10 @@ import DeleteIcon from '@mui/icons-material/Delete'
 
 export const DeleteButton = ({ aria, size, onDelete }) => {
 	return (
-		<IconButton aria-label={aria} size={size} onClick={onDelete}>
-			<DeleteIcon />
-		</IconButton>
+		<>
+			<IconButton aria-label={aria} size={size} onClick={onDelete}>
+				<DeleteIcon />
+			</IconButton>
+		</>
 	)
 }
