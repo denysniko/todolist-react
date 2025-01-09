@@ -9,7 +9,11 @@ const TodoApp = () => {
 	const [tasks, setTasks] = useState([])
 
 	const handleAddTask = name => {
-		setTasks([...tasks, { id: nextId++, name: name }])
+		setTasks([...tasks, { id: nextId++, name: name, done: false }])
+	}
+
+	const handleChangeTask = todo => {
+		setTasks(tasks.map(task => (task.id === todo.id ? todo : task)))
 	}
 
 	const handleDeleteTask = id => {
@@ -24,7 +28,11 @@ const TodoApp = () => {
 			</blockquote>
 
 			<AddTask onAddTask={handleAddTask} />
-			<TaskList tasks={tasks} onDeleteTask={handleDeleteTask} />
+			<TaskList
+				tasks={tasks}
+				onChangeTask={handleChangeTask}
+				onDeleteTask={handleDeleteTask}
+			/>
 		</section>
 	)
 }
